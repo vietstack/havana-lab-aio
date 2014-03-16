@@ -48,22 +48,27 @@ Trong đó:
 Bắt đầu cài đặt
 ============
 Chuyển sang quyền root bằng lệnh
+
    sudo - i hoặc su - 
 
 Tải cài đặt gói git bằng lệnh
+
    apt-get install git -y
 
 Tải script bằng lệnh và di chuyển vào thư mục havana-lab-aio
+
    git clone https://github.com/vietstack/havana-lab-aio.git && cd havana-lab-aio
 
 Thực hiện script thiết lập thông số cho cardmang
 -----------------
+
    chmod -R 777 configure-network.sh
    sh configure-network.sh
 
 
 Chạy script để tiến hành cài đặt OpenStack
 -----------------
+
    chmod -R 777 install-stack.sh
    sh install-stack.sh
 
