@@ -11,10 +11,28 @@ Người thực hiện
 - Trần Hoàng Sơn    tranhoangson@gmail.com
 - VIỆT STACK        vietstack@gmail.com
 
-## Chuẩn bị
-Thiết lập thông số
+Yêu cầu về thiết bị
+============
 
-:Node Role: Controller, Network Controller and Compute Node
+Thiết lập thông số
+============
+Hệ điều hành
+----------------
+Ubuntu 12.04 Server 64-bit
+
+Phân vùng ổ đĩa
+----
+Hướng dẫn này phân vùng các ổ đĩa cho Ubuntu như sau, bước này thực hiện lúc cài đặ Ubuntu (bạn cần phân vùng đúng thứ tự như dưới)
+
+=========  =======================  ==============  ===================
+Partition  Filesystem               Mount point     Size
+=========  =======================  ==============  ===================
+/dev/sda1  swap                     n/a             (Amount of RAM) * 2
+/dev/sda2  ext4                     /               30+ GB
+/dev/sda3  none                     n/a             30+ GB
+/dev/sda4  xfs                      /srv/node/sda4  10+ GB
+=========  =======================  ==============  ===================
+
 :Nics: eth0 (10.10.10.51), eth1 (192.168.1.251)
 
 ## Thực hiện:
