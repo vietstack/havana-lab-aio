@@ -4,7 +4,7 @@ Hướng dẫn cài đặt OpenStack Havana theo mô hình All In One
 
 Hướng dẫn này dựa theo bài viết của tác giả `Andriy Yurchuk's <http://minuteware.net>`_ <ayurchuk@minuteware.net> `theo hướng dẫn này  <https://github.com/Ch00k/openstack-install-aio>`_
 
-.. contents ::
+.. Nội dung ::
 
 Người thực hiện
 
