@@ -46,15 +46,15 @@ Trong đó:
 - Card eth1 là card dùng để ra vào internet, card này để chế độ bridge trong vmware workstation.
 
 Bắt đầu cài đặt
------------------
+============
 Chuyển sang quyền root bằng lệnh
-- sudo - i hoặc su - 
+   sudo - i hoặc su - 
 
 Tải cài đặt gói git bằng lệnh
-- apt-get install git -y
+   apt-get install git -y
 
 Tải script bằng lệnh và di chuyển vào thư mục havana-lab-aio
--  git clone https://github.com/vietstack/havana-lab-aio.git && cd havana-lab-aio
+   git clone https://github.com/vietstack/havana-lab-aio.git && cd havana-lab-aio
 
 Thực hiện script thiết lập thông số cho cardmang
 -----------------
