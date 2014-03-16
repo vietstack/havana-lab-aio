@@ -14,8 +14,10 @@ Thiết lập thông số
 ## Thực hiện:
 Chuyển sang quyền root bằng lệnh
 - sudo - i hoặc su - 
+
 Tải cài đặt gói git bằng lệnh
 - apt-get install git -y
+
 Tải script bằng lệnh và di chuyển vào thư mục havana-lab-aio
 -  git clone https://github.com/vietstack/havana-lab-aio.git && cd havana-lab-aio
 
