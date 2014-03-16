@@ -59,8 +59,9 @@ Tải script bằng lệnh và di chuyển vào thư mục havana-lab-aio::
 
    git clone https://github.com/vietstack/havana-lab-aio.git && cd havana-lab-aio
 
-Thực hiện script thiết lập thông số cho cardmang::
+Thực hiện script thiết lập thông số cho cardmang
 -----------------
+Phân quyền và thực thi file configure-network.sh::
 
    chmod -R 777 configure-network.sh
    sh configure-network.sh
@@ -68,6 +69,7 @@ Thực hiện script thiết lập thông số cho cardmang::
 
 Chạy script để tiến hành cài đặt OpenStack
 -----------------
+Phân quyền và thực thi file install-stack.sh::
 
    chmod -R 777 install-stack.sh
    sh install-stack.sh
