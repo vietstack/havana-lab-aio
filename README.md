@@ -11,10 +11,21 @@ Người thực hiện:
 ## Chuẩn bị
 Thiết lập thông số
 
-# Cấu hình card mạng
+## Thực hiện:
+Chuyển sang quyền root bằng lệnh
+- sudo - i hoặc su - 
+Tải cài đặt gói git bằng lệnh
+- apt-get install git -y
+Tải script bằng lệnh và di chuyển vào thư mục havana-lab-aio
+-  git clone https://github.com/vietstack/havana-lab-aio.git && cd havana-lab-aio
 
-Kiểm tra
-========
+## Chạy script để thiết lập cấu hình cho các interface
+- chmod -R 777 configure-network.sh
+- sh configure-network.sh
 
-Kiểm tra2
-========
+## Chạy script để tiến hành cài đặt OpenStack 
+- chmod -R 777 install-stack.sh
+- sh install-stack.sh
+
+## Liên hệ:
+tranhoangson@gmail.com | vietstack@gmail.com | http://facebook.com/groups/vietstack
