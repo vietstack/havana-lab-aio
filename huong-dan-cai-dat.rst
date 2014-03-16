@@ -33,7 +33,13 @@ Partition  Filesystem               Mount point     Size
 /dev/sda4  xfs                      /srv/node/sda4  10+ GB
 =========  =======================  ==============  ===================
 
-:Nics: eth0 (10.10.10.51), eth1 (192.168.1.251)
+Thiết lập về card mạng
+-------
+Đảm bảo máy của các bạn có 2 NIC và được cấu hình đúng thứ tự::
+
+   eth0: 10.10.10.51
+   eth1: 192.168.1.251
+
 
 ## Thực hiện:
 Chuyển sang quyền root bằng lệnh
