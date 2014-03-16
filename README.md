@@ -1,4 +1,4 @@
-havana-lab-aio
+Hướng dẫn cài đặt OpenStack Havana theo mô hình All In One
 ==============
 
 Cài đặt OpenStack Havana All In One 
