@@ -74,6 +74,8 @@ Phân quyền và thực thi file install-stack.sh::
    chmod -R 777 install-stack.sh
    sh install-stack.sh
 
+Trong quá trình thực thi file install-stack.sh bạn cần khai báo mật khẩu cho MYSQL.
+
 Liên hệ:
 -----------------
 tranhoangson@gmail.com | vietstack@gmail.com | http://facebook.com/groups/vietstack
