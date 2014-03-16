@@ -36,7 +36,6 @@ EOF
 
 # Restart Network
 /etc/init.d/networking restart
-service networking restart
 
 exit 0
 
