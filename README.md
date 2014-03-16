@@ -11,6 +11,11 @@ Người thực hiện
 
 ## Chuẩn bị
 Thiết lập thông số
+Requirements
+============
+
+:Node Role: Controller, Network Controller and Compute Node
+:Nics: eth0 (10.10.10.51), eth1 (192.168.1.251)
 
 ## Thực hiện:
 Chuyển sang quyền root bằng lệnh
