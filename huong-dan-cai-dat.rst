@@ -41,8 +41,7 @@ Thiết lập về card mạng
    eth1: 192.168.1.251
 Trong đó:
 
-- Card eth0 là card để quản lý (dùng chế độ vmnet2 ... hoặc vmnet3, vmnet4 tùy bạn. Miễn là bạn thiết lập trong vmware workstation để có thể 
-nhận được IP với dải 10.10.10.0/25.
+- Card eth0 là card để quản lý (dùng chế độ vmnet2 ... hoặc vmnet3, vmnet4 tùy bạn. Miễn là bạn thiết lập trong vmware workstation để có thể nhận được IP với dải 10.10.10.0/25.
 
 - Card eth1 là card dùng để ra vào internet, card này để chế độ bridge trong vmware workstation.
 
