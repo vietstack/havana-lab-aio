@@ -155,7 +155,8 @@ EOF
 ovs-vsctl add-port br-ex eth1
 
 /etc/init.d/networking restart
-
+sleep 15s
+ping 8.8.8.8 -c 3
 #Neutron ===================================================================================================================
 #Install Neutron packages:
 apt-get install -y neutron-server neutron-plugin-openvswitch neutron-plugin-openvswitch-agent dnsmasq neutron-dhcp-agent neutron-l3-agent neutron-metadata-agent
