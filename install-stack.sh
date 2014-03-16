@@ -243,8 +243,8 @@ rm /var/lib/neutron/neutron.sqlite
 
 #Restart all neutron services:
 echo -e 'for i in $( ls /etc/init.d/neutron-* ); do service `basename $i` restart; done\nservice dnsmasq restart' > neutronrestart.sh
-sed -i 's|\#!/bin/sh -e|#!/bin/sh -e \nsh /root/neutronrestart.sh|' /etc/rc.local
-sh /root/neutronrestart.sh
+sed -i 's|\#!/bin/sh -e|#!/bin/sh -e \nsh /root/havana-lab-aio/neutronrestart.sh|' /etc/rc.local
+sh /root/havana-lab-aio/neutronrestart.sh
 
 #Check Neutron agents
 neutron agent-list
