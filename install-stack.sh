@@ -154,7 +154,7 @@ EOF
 
 #Add eth1 to br-ex:
 ovs-vsctl add-port br-ex eth1
-
+sleep 10s
 /etc/init.d/networking restart
 sleep 5s
 ping 8.8.8.8 -c 3
