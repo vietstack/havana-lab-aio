@@ -58,12 +58,15 @@ Tải script bằng lệnh và di chuyển vào thư mục havana-lab-aio
 
 Thực hiện script thiết lập thông số cho cardmang
 -----------------
-- chmod -R 777 configure-network.sh
-- sh configure-network.sh
+   chmod -R 777 configure-network.sh
+   sh configure-network.sh
 
-Chạy script để tiến hành cài đặt OpenStack 
-- chmod -R 777 install-stack.sh
-- sh install-stack.sh
 
-## Liên hệ:
+Chạy script để tiến hành cài đặt OpenStack
+-----------------
+   chmod -R 777 install-stack.sh
+   sh install-stack.sh
+
+Liên hệ:
+-----------------
 tranhoangson@gmail.com | vietstack@gmail.com | http://facebook.com/groups/vietstack
