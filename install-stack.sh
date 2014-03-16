@@ -72,6 +72,7 @@ echo "source ~/.keystonerc" >> ~/.bashrc
 
 #GLANCE IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
 #Install Glance
+echo "Cai dat GLANCE"
 apt-get -y install glance
 
 #------------------Configure glance-api.conf and glance-registry.conf---------
@@ -111,7 +112,7 @@ glance-manage db_sync
 service glance-registry restart; service glance-api restart
 
 # NEUTRON IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
-
+echo "Cai dat Neutron"
 # OpenVSwitch======================================================================================================================
 #Install OpenVSwitch:
 apt-get install -y openvswitch-controller openvswitch-switch openvswitch-datapath-dkms
