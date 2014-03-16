@@ -7,7 +7,6 @@ Tham khảo kịch bản của tác giả Andriy Yurchuk tại link
 Người thực hiện:
 - Trần Hoàng Sơn | tranhoangson@gmail.com
 - VIỆT STACK | vietstack@gmail.com
-- 
 
 ## Chuẩn bị
 Thiết lập thông số
