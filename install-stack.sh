@@ -66,9 +66,20 @@ wget https://raw2.github.com/Ch00k/openstack-install-aio/master/populate_keyston
 sh populate_keystone.sh
 
 #Create a simple credential file and source it so you have your credentials loaded in your environnment
-echo -e 'export OS_TENANT_NAME=admin\nexport OS_USERNAME=admin\nexport OS_PASSWORD=openstacktest\nexport OS_AUTH_URL="http://192.168.1.251:5000/v2.0/"' > ~/.keystonerc
-source ~/.keystonerc
-echo "source ~/.keystonerc" >> ~/.bashrc
+
+
+#echo -e 'export OS_TENANT_NAME=admin\nexport OS_USERNAME=admin\nexport OS_PASSWORD=openstacktecat << EOF > keystonesrc
+export OS_USERNAME=admin
+export OS_PASSWORD=openstacktest
+export OS_TENANT_NAME=admin
+export OS_AUTH_URL=http://192.168.1.251:5000/v2.0
+#export OS_NO_CACHE=1
+EOF
+chmod 600 keystonesrc
+source keystonesrc
+st\nexport OS_AUTH_URL="http://192.168.1.251:5000/v2.0/"' > ~/.keystonerc
+#source ~/.keystonerc
+#echo "source ~/.keystonerc" >> ~/.bashrc
 
 #GLANCE IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
 #Install Glance
@@ -119,8 +130,10 @@ apt-get install -y openvswitch-controller openvswitch-switch openvswitch-datapat
 
 #Create bridges:
 #br-int for VM interaction:
+echo "Them card bri-int" && sleep 5
 ovs-vsctl add-br br-int
 #br-ex to give VMs access to the Internet:
+echo "Them card bri-ex" && sleep 6
 ovs-vsctl add-br br-ex
 
 #Modify network configuration of your host-------------------------------------------------------------------
@@ -153,10 +166,11 @@ iface br-ex inet static
 EOF
 
 #Add eth1 to br-ex:
+echo "Them port bri-ex vao eth1" && sleep 5
 ovs-vsctl add-port br-ex eth1
-sleep 10s
+sleep 10
 /etc/init.d/networking restart
-sleep 5s
+sleep 5
 ping 8.8.8.8 -c 3
 #Neutron ===================================================================================================================
 #Install Neutron packages:
