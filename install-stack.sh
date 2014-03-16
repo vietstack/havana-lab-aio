@@ -153,6 +153,7 @@ EOF
 
 #Add eth1 to br-ex:
 ovs-vsctl add-port br-ex eth1
+
 /etc/init.d/networking restart
 
 #Neutron ===================================================================================================================
