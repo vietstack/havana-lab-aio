@@ -39,7 +39,10 @@ Thiết lập về card mạng
 
    eth0: 10.10.10.51
    eth1: 192.168.1.251
-
+Trong đó:
+- card eth0 là card để quản lý (dùng chế độ vmnet2 ... hoặc vmnet3, vmnet4 tùy bạn. Miễn là bạn thiết lập trong vmware workstation để có thể 
+nhận được IP với dải 10.10.10.0/25.
+- Card eth1 là card dùng để ra vào internet, card này để chế độ bridge trong vmware workstation.
 
 ## Thực hiện:
 Chuyển sang quyền root bằng lệnh
@@ -51,7 +54,8 @@ Tải cài đặt gói git bằng lệnh
 Tải script bằng lệnh và di chuyển vào thư mục havana-lab-aio
 -  git clone https://github.com/vietstack/havana-lab-aio.git && cd havana-lab-aio
 
-Chạy script để thiết lập cấu hình cho các interface
+Networking
+----------
 - chmod -R 777 configure-network.sh
 - sh configure-network.sh
 
