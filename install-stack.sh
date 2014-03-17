@@ -66,9 +66,7 @@ wget https://raw2.github.com/Ch00k/openstack-install-aio/master/populate_keyston
 sh populate_keystone.sh
 
 #Create a simple credential file and source it so you have your credentials loaded in your environnment
-
-
-#echo -e 'export OS_TENANT_NAME=admin\nexport OS_USERNAME=admin\nexport OS_PASSWORD=openstacktecat << EOF > keystonesrc
+cat << EOF > keystonesrc
 export OS_USERNAME=admin
 export OS_PASSWORD=openstacktest
 export OS_TENANT_NAME=admin
@@ -77,7 +75,7 @@ export OS_AUTH_URL=http://192.168.1.251:5000/v2.0
 EOF
 chmod 600 keystonesrc
 source keystonesrc
-st\nexport OS_AUTH_URL="http://192.168.1.251:5000/v2.0/"' > ~/.keystonerc
+
 #source ~/.keystonerc
 #echo "source ~/.keystonerc" >> ~/.bashrc
 
