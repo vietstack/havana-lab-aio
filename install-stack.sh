@@ -8,11 +8,11 @@ echo deb http://ubuntu-cloud.archive.canonical.com/ubuntu precise-proposed/havan
 
 #update system
 apt-get -y update && apt-get -y upgrade && apt-get -y dist-upgrade
-
+sleep 10
 #MySQL, RabbitMQ, NTP
 apt-get install -y mysql-server python-mysqldb rabbitmq-server ntp
 
-
+sleep 10
 # Replace 127.0.0.1 by 0.0.0.0 for sql connect to all interface
 sed -i 's/127.0.0.1/0.0.0.0/g' /etc/mysql/my.cnf
 service mysql restart
@@ -47,7 +47,7 @@ EOF
 #Enable IP Forwarding:
 sed -i 's/#net.ipv4.ip_forward=1/net.ipv4.ip_forward=1/' /etc/sysctl.conf
 sysctl net.ipv4.ip_forward=1
-
+sleep 10
 #KEYSTONE IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
 apt-get install -y keystone
 
